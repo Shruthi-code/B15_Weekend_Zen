@@ -1,0 +1,31 @@
+1) Difference btw HTTP 1.1 and HTTP 2?
+
+	In HTTP/1.1, it keeps all requests and responses in plain text format and 
+	cannot send multiple requests for data in parallel over a single TCP connection.
+
+	In HTTP/2, uses the binary framing layer to encapsulate all messages in 
+	binary format where Request multiplexing over a single TCP connection, 
+	while still maintaining HTTP semantics, such as verbs, methods, and headers.
+
+2) GET vs POST?
+
+	GET(Read Data):
+	
+	-In case of Get request, only limited amount of data can be sent because data is sent in header.
+	-Get request is not secured because data is exposed in URL bar.
+	-Get request can be bookmarked.
+	-Get request is idempotent . It means second request will be ignored until response of first request is delivered.
+	-Get request is more efficient and used more than Post.
+
+	POST(Insert Data):
+
+	-In case of post request, large amount of data can be sent because data is sent in body.
+	-Post request is secured because data is not exposed in URL bar.
+	-Post request cannot be bookmarked.
+	-Post request is non-idempotent.
+	-Post request is less efficient and used less than get.
+
+
+3) Mini tasks in POSTMAN - Practised in POSTMAN (Done)
+
+Postman samples -  https://www.youtube.com/watch?v=eYQyqf-DtCQ
