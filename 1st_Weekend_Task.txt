@@ -1,0 +1,154 @@
+Questions:
+
+1)Can you explain about DOM and the browser components?
+
+The Document Object Model (DOM) is a programming interface for HTML and XML 
+documents. 
+It represents the page so that programs can change the document structure, 
+style, and content. 
+The DOM represents the document as nodes and objects.
+
+Web browsers consist of a user interface, layout engine, rendering engine, 
+JavaScript interpreter, UI backend, networking component and 
+data persistence component. 
+These components achieve different functionalities of a web browser and 
+together provide all capabilities of a web browser.
+
+2)Why we need an IP address and mac address?
+
+
+MAC Addresses handle the physical connection from computer to computer 
+while IP Addresses handle the logical routeable connection from both computer 
+to computer AND network to network.
+
+3)Are JS and Java are the same?
+
+No, JS and Java aren't the same. 
+-Java applications are run in a virtual 
+machine or web browser,
+while JavaScript is run on a web browser. 
+
+-Java code is compiled whereas 
+while JavaScript code is in text and in a 
+web page. 
+
+-JavaScript is an OOP scripting language, whereas 
+Java is an OOP programming language.
+
+4)What are the various Layout and JS engines?
+
+A rendering engine is often used interchangeably with browser engines. 
+It is responsible for the layout of your website on your audience’s screen. 
+A rendering engine is responsible for the paint, and animations used on 
+your website.
+
+Blink – Used in Google Chrome, and Opera browsers.
+WebKit – Used in Safari browsers.
+Gecko – Used in Mozilla Firefox browsers.
+Trident – Used in Internet Explorer browsers.
+EdgeHTML – Used in Edge browsers.
+Presto – Legacy rendering engine for Opera.
+
+JavaScript engine as the name suggests helps to interpret JavaScript code of 
+your website before rendering it in front of your audience. 
+JavaScript Engines were introduced with the purpose of serving themselves as 
+an interpreter.
+
+V8 – Used with Blink
+Nitro – Used with Webkit
+SpiderMonkey – Used with Gecko
+Chakra – Used with Trident & EdgeHTML
+
+Note: The primary difference between a Rendering engine and a JavaScript 
+engine lies around the dependency with browser. The rendering engine is 
+tightly coupled with browser engine, on the other hand, a JavaScript engine 
+can be worked upon even without a browser.
+
+5)What's a programming paradigm?
+
+A programming paradigm is a style, or “way,” of programming, 
+they are not meant to be mutually exclusive.
+
+JavaScript is a multi-paradigm scripting language, 
+which means that it is very dynamic in nature and supports various types 
+of programming styles, such as object-oriented, imperative, and 
+functional programming.
+
+6)Features of JS?
+
+Validating User’s Input
+Simple Client-side Calculations
+Greater Control
+Platform Independent
+Handling Dates and Time
+Generating HTML Content
+Detecting the User’s Browser and OS
+
+7)What happens when you hit a website? Explain the flow in detail.
+
+-You enter a URL into a web browser
+-The browser looks up the IP address for the domain name via DNS
+-The browser sends a HTTP request to the server
+-The server sends back a HTTP response
+-The browser begins rendering the HTML
+-The browser sends requests for additional objects embedded in HTML 
+(images, css, JavaScript) and repeats steps 3-5.
+-Once the page is loaded, the browser sends further async requests as needed.
+
+8)What are the HTTP error codes?
+
+1xx: Informational
+It means the request has been received and the process is continuing.
+
+2xx: Success
+It means the action was successfully received, understood, and accepted.
+
+3xx: Redirection
+It means further action must be taken in order to complete the request.
+
+4xx: Client Error
+It means the request contains incorrect syntax or cannot be fulfilled.
+
+5xx: Server Error
+It means the server failed to fulfill an apparently valid request.
+
+9)What is the diff between http1.1 vs http2?
+
+In HTTP/1.1, it keeps all requests and responses in plain text format and 
+cannot send multiple requests for data in parallel over a single TCP connection.
+
+In HTTP/2, uses the binary framing layer to encapsulate all messages in 
+binary format where Request multiplexing over a single TCP connection, 
+while still maintaining HTTP semantics, such as verbs, methods, and headers.
+
+10)What's an HTTP header?
+
+HTTP header fields provide required information about the request or 
+response, or about the object sent in the message body. 
+There are four types of HTTP message headers:
+
+-General-header: 
+These header fields have general applicability for both request and 
+response messages.
+
+-Client Request-header: 
+These header fields have applicability only for request messages.
+
+-Server Response-header: 
+These header fields have applicability only for response messages.
+
+-Entity-header: 
+These header fields define meta information about the entity-body or, 
+if no body is present, about the resource identified by the request.
+
+11)What's the default browser method?
+
+GET(Read Data) is the default browser method.
+	
+-In case of Get request, only limited amount of data can be sent 
+because data is sent in header.
+-Get request is not secured because data is exposed in URL bar.
+-Get request can be bookmarked.
+-Get request is idempotent . 
+-Get request is more efficient and used more than Post.
+
